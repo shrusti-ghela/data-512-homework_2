@@ -39,12 +39,12 @@ One of the lessons I learned from the dataset is how important domain knowledge 
 
 Q1. What biases did you expect to find in the data (before you started working with it), and why?
 
-Before beginning the analysis, I assumed that large English-speaking countries (or the most popular and possibly wealthy ones) would have the most articles and the highest quality of articles. The reason for this is that you would expect more people in such countries to access Wikipedia pages frequently, and since Wikipedia articles are peer-reviewed based on a Wikipedia Content Assessment, it seems logical to assume that such countries would have a greater number of articles with higher quality content pages.
+The language spoken in the country is one of the biases. More articles for that country are more likely if there are more English speakers in the country. Another potential bias that could be observed is that countries with good internet access contribute more to Wikipedia, resulting in more articles.
 
-Q2. What (potential) sources of bias did you discover in the course of your data processing and analysis?
+Q2: What might your results suggest about (English) Wikipedia as a data source?   
 
-The web crawling performed on the Wikipedia page to generate a list of article pages about politicians from various countries did not include politicians from major English-speaking countries (as seen above). The data collection process was flawed. Using this file as the source of the data analysis results in bias because a large category of countries is not represented in the data.
+The findings indicate that there is more data on Wikipedia for English-speaking politicians, and as such, policymakers and researchers should keep this in mind before implementing any policy, as the data that leads to a conclusion about any region is biased towards one group of politicians (English speakers).
 
-Q3. How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
+Q3: Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data? 
 
-To avoid bias and work on meaningful data analysis, a researcher may supplement the dataset by crawling Wikipedia pages and ensuring that the politicians dataset includes politicians from each country.
+A realistic data science research scenario in which using these data (to train a model, conduct hypothesis-driven research, or make business decisions) may result in biased or misleading results due to the data's inherent gaps and limitations is when the data is used to study a phenomenon that is not well represented by the data. For example, if the data is used to study the effect of a new medication on a disease, but only a small number of patients with the disease are included in the data, the results may be biased or misleading. Similarly, in our dataset, the data was skewed toward English-speaking politicians. As a result of the data's inherent gaps and limitations, using it to train a model, conduct hypothesis-driven research, or make business decisions may produce biased or misleading results. 
